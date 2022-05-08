@@ -20,6 +20,7 @@ Tags:
 
 {test_cases}
 '''
+
 validator_formatter = """
 def validator({function_name}, inputs, expected):
     {parameter_names} = inputs
