@@ -7,7 +7,7 @@ from crawler.crawler import Crawler
 
 solution_formatter = '''"""
 Problem:
-    {question_frontend_id}. {title}
+    {frontend_id}. {title}
 Difficulty:
     {difficulty}
 URL:
@@ -56,7 +56,7 @@ def main():
 
             with open(file, 'w') as file:
                 print(solution_formatter.format(
-                    question_frontend_id=crawler.frontend_id,
+                    frontend_id=crawler.frontend_id,
                     title=crawler.title,
                     difficulty=crawler.difficulty,
                     url=crawler.url,
