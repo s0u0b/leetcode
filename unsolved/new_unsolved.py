@@ -42,7 +42,7 @@ def main():
     with Crawler() as crawler:
         crawler.set_problem_by_id(problem_id)
         if crawler.problem:
-            file = crawler.file_name
+            file = crawler.file
             if args.version:
                 file = file.replace('.py', f'_{args.version}.py')
             file = Path(file)

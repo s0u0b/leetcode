@@ -186,11 +186,11 @@ class Crawler:
         return ', '.join(input_list)
 
     @property
-    def file_name(self):
+    def file(self):
         question_frontend_id = self.problem['questionFrontendId'].rjust(5, '0')
         title_slug = self.problem['titleSlug'].replace('-', '_')
-        file_name = '_'.join([question_frontend_id, title_slug])
-        return 'a' + file_name + '.py'
+        file = '_'.join([question_frontend_id, title_slug])
+        return 'a' + file + '.py'
 
     @property
     def difficulty(self):
