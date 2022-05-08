@@ -14,7 +14,7 @@ def main():
     for file in os.listdir():
         if file.startswith('a') and file.endswith(".py"):
             solution_list.append(file)
-
+    difficulty = {'Easy': 'green', 'Medium': 'orange', 'Hard': 'red', }
     table_head = ['ID', 'Problem', 'Difficulty', 'Solution', 'Date']
     solution_table = [table_head, ]
     solution_statistics = {}
@@ -32,7 +32,10 @@ def main():
                 if 'Problem' in line:
                     solution_data['ID'], solution_data['Problem'] = re.split(r'\.', f.readline())
                 if 'Difficulty' in line:
-                    solution_data['Difficulty'] = f.readline()
+                    solution_data['Difficulty'] = f.readline().strip()
+                    solution_data['Difficulty'] = '<font color={}>{}</font>'.format(
+                        difficulty[solution_data["Difficulty"]],
+                        solution_data["Difficulty"])
                 if 'URL' in line:
                     solution_data['URL'] = f.readline()
                     break
@@ -60,10 +63,11 @@ def main():
                         break
     total = sum([solution_statistic for solution_statistic in solution_statistics.values()])
     solution_statistics['Total'] = total
-    solution_statistics = {key: [value] for (key, value) in solution_statistics.items()}
+    solution_statistics = [['Difficulty', 'Number of solved']] + [[key, value] for (key, value) in
+                                                                  solution_statistics.items()]
     with open('../README.md', 'w') as readme:
         mdprint('My leetcode solutions', heading=2, file=readme)
-        mdprint_dict(solution_statistics, file=readme)
+        mdprint_list(solution_statistics, file=readme)
         mdprint_list(solution_table, file=readme)
 
 
