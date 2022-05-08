@@ -1,6 +1,8 @@
 import os
 import re
+from pathlib import Path
 from pprint import pprint
+from datetime import datetime, timezone, timedelta
 
 from mdprint import mdprint_list, mdprint_dict, mdprint
 
@@ -19,8 +21,12 @@ def main():
     solution_id = []
     for solution in solution_list:
         with open(solution, 'r', encoding="utf-8") as f:
+            stat_result = Path(solution).stat()
+            modified = datetime.fromtimestamp(stat_result.st_mtime, tz=timezone(timedelta(hours=+8))).strftime(
+                '%Y-%m-%d')
             solution_data = {
                 'file': path_dir + solution,
+                'date': modified
             }
             for line in f:
                 if 'Problem' in line:
@@ -42,13 +48,14 @@ def main():
                         solution_data['ID'],
                         f'[{solution_data["Problem"]}]({solution_data["URL"]})',
                         solution_data['Difficulty'],
-                        f'[{solution}]({solution_data["file"]})',
+                        f'[{solution} ({solution_data["date"]})]({solution_data["file"]})',
                     ]
                 )
             else:
                 for i, solution_statistic in enumerate(solution_table):
                     if solution_statistic[0] == solution_data['ID']:
-                        solution_statistic[3] += f'<br>[{solution}]({solution_data["file"]})'
+                        solution_statistic[
+                            3] += f'<br>[{solution} ({solution_data["date"]})]({solution_data["file"]})'
                         break
     total = sum([solution_statistic for solution_statistic in solution_statistics.values()])
     solution_statistics['Total'] = total
