@@ -15,7 +15,7 @@ def main():
         if file.startswith('a') and file.endswith(".py"):
             solution_list.append(file)
 
-    table_head = ['ID', 'Problem', 'Difficulty', 'Solution']
+    table_head = ['ID', 'Problem', 'Difficulty', 'Solution', 'Date']
     solution_table = [table_head, ]
     solution_statistics = {}
     solution_id = []
@@ -48,14 +48,15 @@ def main():
                         solution_data['ID'],
                         f'[{solution_data["Problem"]}]({solution_data["URL"]})',
                         solution_data['Difficulty'],
-                        f'[{solution} ({solution_data["date"]})]({solution_data["file"]})',
+                        f'[{solution}]({solution_data["file"]})',
+                        solution_data["date"],
                     ]
                 )
             else:
                 for i, solution_statistic in enumerate(solution_table):
                     if solution_statistic[0] == solution_data['ID']:
-                        solution_statistic[
-                            3] += f'<br>[{solution} ({solution_data["date"]})]({solution_data["file"]})'
+                        solution_statistic[3] += f'<br>[{solution}]({solution_data["file"]})'
+                        solution_statistic[4] += f'<br>{solution_data["date"]}'
                         break
     total = sum([solution_statistic for solution_statistic in solution_statistics.values()])
     solution_statistics['Total'] = total
