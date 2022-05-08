@@ -5,7 +5,7 @@ import sys
 sys.path.append('..')
 from crawler.crawler import Crawler
 
-solution_file_formatter = '''"""
+solution_formatter = '''"""
 Problem:
     {question_frontend_id}. {question_title}
 Difficulty:
@@ -19,8 +19,14 @@ Tags:
 
 
 {test_cases}
-
 '''
+validator_formatter = """
+def validator({function_name}, inputs, expected):
+    {parameter_names} = inputs
+    output = {function_name}({parameter_names})
+    assert output == expected, (output, expected)
+
+"""
 
 
 def main():
@@ -45,13 +51,11 @@ def main():
             if Path('../solutions', file).exists():
                 print(f'Solution {file} exist')
                 return
-
             file.touch(exist_ok=True)
             print(f'Create {file} successfully')
 
             with open(file, 'w') as file:
-
-                print(solution_file_formatter.format(
+                print(solution_formatter.format(
                     question_frontend_id=crawler.frontend_id,
                     question_title=crawler.title,
                     difficulty=crawler.difficulty,
@@ -63,11 +67,10 @@ def main():
                 if args.validator:
                     function_name = crawler.function_name
                     parameter_names = crawler.parameter_names
-                    print(f'def validator({function_name}, inputs, expected):\n'
-                          f'    {parameter_names} = inputs\n'
-                          f'    output = {function_name}({parameter_names})\n'
-                          f'    assert output == expected, (output, expected)\n'
-                          f'\n', file=file)
+                    print(validator_formatter.format(
+                        function_name=function_name,
+                        parameter_names=parameter_names,
+                    ), file=file)
 
 
 if __name__ == '__main__':
