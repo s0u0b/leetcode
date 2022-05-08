@@ -5,6 +5,8 @@ Difficulty:
     Easy
 URL:
     https://leetcode.com/problems/two-sum
+Tags:
+    Array, Hash Table
 """
 from typing import List
 

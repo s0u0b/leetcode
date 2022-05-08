@@ -5,6 +5,8 @@ Difficulty:
     Medium
 URL:
     https://leetcode.com/problems/remove-nth-node-from-end-of-list
+Tags:
+    Linked List, Two Pointers
 """
 from typing import List, Optional
 import sys

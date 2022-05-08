@@ -5,6 +5,8 @@ Difficulty:
     Medium
 URL:
     https://leetcode.com/problems/longest-substring-without-repeating-characters
+Tags:
+    Hash Table, String, Sliding Window
 """
 
 
