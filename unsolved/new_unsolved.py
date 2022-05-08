@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 import sys
+
 sys.path.append('..')
 from crawler.crawler import Crawler
 
@@ -38,6 +39,8 @@ def main():
                 print(f'Difficulty:\n    {difficulty}', file=file)
                 url = crawler.get_url(problem)
                 print(f'URL:\n    {url}', file=file)
+                topic_tags = crawler.get_topic_tags(problem)
+                print(f'Tags:\n    {topic_tags}', file=file)
                 print('"""', file=file)
                 code = crawler.get_python_code(problem)
                 print(code, file=file)

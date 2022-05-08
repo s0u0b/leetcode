@@ -40,6 +40,9 @@ class Crawler:
                             langSlug
                             code
                         }
+                        topicTags {
+                            name
+                        }
                     }
                 }'''
         }
@@ -154,3 +157,10 @@ class Crawler:
 
     def get_url(self, problem):
         return problem['url']
+
+    def get_topic_tags(self, problem):
+        topic_tags = problem['topicTags']
+        tags = []
+        for topic_tag in topic_tags:
+            tags.append(topic_tag['name'])
+        return ', '.join(tags)
