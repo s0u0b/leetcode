@@ -1,6 +1,6 @@
 ## My leetcode solutions
 
-| Difficulty | Number of solved |
+| Difficulty | Solved |
 |----|----|
 | <font color=green>Easy</font> | 2 |
 | <font color=orange>Medium</font> | 2 |

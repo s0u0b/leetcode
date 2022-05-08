@@ -63,8 +63,8 @@ def main():
                         break
     total = sum([solution_statistic for solution_statistic in solution_statistics.values()])
     solution_statistics['Total'] = total
-    solution_statistics = [['Difficulty', 'Number of solved']] + [[key, value] for (key, value) in
-                                                                  solution_statistics.items()]
+    solution_statistics = [['Difficulty', 'Solved']] + [[key, value] for (key, value) in
+                                                        solution_statistics.items()]
     with open('../README.md', 'w') as readme:
         mdprint('My leetcode solutions', heading=2, file=readme)
         mdprint_list(solution_statistics, file=readme)
