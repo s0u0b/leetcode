@@ -17,21 +17,22 @@ def main():
     with Crawler() as crawler:
         problem = crawler.get_problem_by_id(problem_id)
         if problem:
-            file_name = crawler.get_file_name(problem)
+            file = crawler.get_file_name(problem)
             if args.version:
-                file_name = file_name.replace('.py', '_' + args.version + '.py')
-            if Path('', file_name).exists():
-                print(f'Unsolved file {file_name} exist')
-                return
-            if Path('../solutions', file_name).exists():
-                print(f'Solution {file_name} exist')
-                return
-            else:
-                file_path = Path('', file_name)
-                file_path.touch(exist_ok=True)
-                print(f'Create {file_path} successfully')
+                file = file.replace('.py', f'_{args.version}.py')
+            file = Path(file)
 
-            with open(file_path, 'w') as file:
+            if file.exists():
+                print(f'Unsolved file {file} exist')
+                return
+            if Path('../solutions', file).exists():
+                print(f'Solution {file} exist')
+                return
+
+            file.touch(exist_ok=True)
+            print(f'Create {file} successfully')
+
+            with open(file, 'w') as file:
                 question_frontend_id = crawler.get_frontend_id(problem)
                 question_title = crawler.get_title(problem)
                 difficulty = crawler.get_difficulty(problem)
