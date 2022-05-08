@@ -35,12 +35,13 @@ def main():
     parser.add_argument('problem_id', help='question frontend id', type=int)
     parser.add_argument("-v", "--version", help='another solution')
     parser.add_argument("-va", "--validator", action='count', help='validator')
+
     args = parser.parse_args()
     problem_id = args.problem_id
 
     with Crawler() as crawler:
-        problem = crawler.get_problem_by_id(problem_id)
-        if problem:
+        crawler.set_problem_by_id(problem_id)
+        if crawler.problem:
             file = crawler.file_name
             if args.version:
                 file = file.replace('.py', f'_{args.version}.py')

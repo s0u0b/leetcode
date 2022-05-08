@@ -93,13 +93,12 @@ class Crawler:
             print('Question id not found')
             return None
 
-    def get_problem_by_id(self, question_id):
+    def set_problem_by_id(self, question_id):
         problem_slug = self.get_problem_slug_by_id(question_id)
         if problem_slug:
             self.problem = self.get_problem_by_slug(problem_slug)
-            return self.get_problem_by_slug(problem_slug)
         else:
-            return None
+            self.problem = None
 
     # todo: refactor parse_inputs and parse_parameter_names to reuse same function
     def parse_inputs(self, inputs):
