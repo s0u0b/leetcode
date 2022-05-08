@@ -48,7 +48,7 @@ def main():
             file = Path(file)
 
             if file.exists():
-                print(f'Unsolved file {file} exist')
+                print(f'Unsolved {file} exist')
                 return
             if Path('../solutions', file).exists():
                 print(f'Solution {file} exist')
