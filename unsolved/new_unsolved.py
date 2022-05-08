@@ -10,6 +10,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('problem_id', help='question frontend id', type=int)
     parser.add_argument("-v", "--version", help='another solution')
+    parser.add_argument("-va", "--validator", action='count', help='validator')
     args = parser.parse_args()
     problem_id = args.problem_id
 
@@ -46,6 +47,14 @@ def main():
                 print(code, file=file)
                 test_cases = crawler.get_test_cases(problem)
                 print(test_cases, file=file)
+                if args.validator:
+                    print('\n\n', file=file)
+                    function_name = crawler.get_function_name(problem)
+                    parameter_names = crawler.get_parameter_names(problem)
+                    print(f'def validator({function_name}, inputs, expected):', file=file)
+                    print(f'    {parameter_names} = inputs', file=file)
+                    print(f'    output = {function_name}({parameter_names})', file=file)
+                    print(f'    assert output == expected, (output, expected)', file=file)
 
 
 if __name__ == '__main__':

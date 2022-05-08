@@ -115,8 +115,10 @@ class Crawler:
         return ', '.join(input_list)
 
     def escape(self, string):
-        return string.replace('\n', '').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace(
-            '&quot;', '"').replace('&#39;', "'").replace('true', 'True').replace('false', 'False').replace('\t', '    ')
+        return string.replace(
+            '\n', '').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace(
+            '&quot;', '"').replace('&#39;', "'").replace('true', 'True').replace('false', 'False').replace(
+            '\t', '    ').replace('null', 'None')
 
     def get_test_cases(self, problem):
         problem_content = problem['content']
@@ -132,13 +134,49 @@ class Crawler:
         test_cases = 'tests = [' + test_cases + '\n]'
         return test_cases
 
-    def get_python_code(self, problem):
+    def get_python_snippet(self, problem):
         code_snippets = problem['codeSnippets']
         for code_snippet in code_snippets:
             if code_snippet['langSlug'] == 'python3':
-                if 'List' in code_snippet['code']:
-                    code_snippet['code'] = 'from typing import List\n\n\n' + code_snippet['code']
-                return code_snippet['code'].replace('\t', '    ')
+                return code_snippet['code']
+
+    def get_python_code(self, problem):
+        code_snippet = self.get_python_snippet(problem)
+        if 'List' in code_snippet:
+            code_snippet = 'from typing import List\n\n\n' + code_snippet
+        return code_snippet.replace('\t', '    ')
+
+    def get_function_name(self, problem):
+        code_snippet = self.get_python_snippet(problem)
+        code_snippet = re.split('class Solution:', code_snippet)[1]
+        function_name = re.findall(r'def (\w+)', code_snippet)[-1]
+        return function_name
+
+    def get_parameter_names(self, problem):
+        problem_content = problem['content']
+        inputs_and_output_list = re.findall(r'<strong>Input:</strong>(.*?)<strong>Output:</strong>(.*?)\n',
+                                            problem_content,
+                                            re.DOTALL)[0]
+
+        inputs, output = inputs_and_output_list
+        inputs = self.escape(inputs)
+        parameter_names = self.parse_parameter_names(inputs)
+        return parameter_names
+
+    def parse_parameter_names(self, inputs):
+        last_equal = 0
+        last_comma = 0
+        input_list = []
+        for i, c in enumerate(inputs):
+            if c == '=':
+                last_equal = i
+            if c == ',':
+                if inputs[last_comma + 1:last_equal]:
+                    input_list += [inputs[last_comma + 1:last_equal].strip()]
+                last_comma = i
+        else:
+            input_list += [inputs[last_comma + 1:last_equal].strip()]
+        return ', '.join(input_list)
 
     def get_file_name(self, problem):
         question_frontend_id = problem['questionFrontendId'].rjust(5, '0')
