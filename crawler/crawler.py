@@ -15,6 +15,7 @@ class Crawler:
     def __init__(self):
         self.user_agent = r'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (HTML, like Gecko) ' \
                           r'Chrome/44.0.2403.157 Safari/537.36 '
+        self.problem = {}
 
     def __enter__(self):
         self.session = requests.Session()
@@ -95,10 +96,12 @@ class Crawler:
     def get_problem_by_id(self, question_id):
         problem_slug = self.get_problem_slug_by_id(question_id)
         if problem_slug:
+            self.problem = self.get_problem_by_slug(problem_slug)
             return self.get_problem_by_slug(problem_slug)
         else:
             return None
 
+    # todo: refactor parse_inputs and parse_parameter_names to reuse same function
     def parse_inputs(self, inputs):
         last_comma = 0
         last_equal = 0
@@ -120,8 +123,9 @@ class Crawler:
             '&quot;', '"').replace('&#39;', "'").replace('true', 'True').replace('false', 'False').replace(
             '\t', '    ').replace('null', 'None')
 
-    def get_test_cases(self, problem):
-        problem_content = problem['content']
+    @property
+    def test_cases(self):
+        problem_content = self.problem['content']
         inputs_and_output_list = re.findall(r'<strong>Input:</strong>(.*?)<strong>Output:</strong>(.*?)\n',
                                             problem_content,
                                             re.DOTALL)
@@ -134,26 +138,30 @@ class Crawler:
         test_cases = 'tests = [' + test_cases + '\n]'
         return test_cases
 
-    def get_python_snippet(self, problem):
-        code_snippets = problem['codeSnippets']
+    @property
+    def python_snippet(self):
+        code_snippets = self.problem['codeSnippets']
         for code_snippet in code_snippets:
             if code_snippet['langSlug'] == 'python3':
                 return code_snippet['code']
 
-    def get_python_code(self, problem):
-        code_snippet = self.get_python_snippet(problem)
+    @property
+    def python_code(self):
+        code_snippet = self.python_snippet
         if 'List' in code_snippet:
             code_snippet = 'from typing import List\n\n\n' + code_snippet
         return code_snippet.replace('\t', '    ')
 
-    def get_function_name(self, problem):
-        code_snippet = self.get_python_snippet(problem)
+    @property
+    def function_name(self):
+        code_snippet = self.python_snippet
         code_snippet = re.split('class Solution:', code_snippet)[1]
         function_name = re.findall(r'def (\w+)', code_snippet)[-1]
         return function_name
 
-    def get_parameter_names(self, problem):
-        problem_content = problem['content']
+    @property
+    def parameter_names(self):
+        problem_content = self.problem['content']
         inputs_and_output_list = re.findall(r'<strong>Input:</strong>(.*?)<strong>Output:</strong>(.*?)\n',
                                             problem_content,
                                             re.DOTALL)[0]
@@ -178,26 +186,32 @@ class Crawler:
             input_list += [inputs[last_comma + 1:last_equal].strip()]
         return ', '.join(input_list)
 
-    def get_file_name(self, problem):
-        question_frontend_id = problem['questionFrontendId'].rjust(5, '0')
-        title_slug = problem['titleSlug'].replace('-', '_')
+    @property
+    def file_name(self):
+        question_frontend_id = self.problem['questionFrontendId'].rjust(5, '0')
+        title_slug = self.problem['titleSlug'].replace('-', '_')
         file_name = '_'.join([question_frontend_id, title_slug])
         return 'a' + file_name + '.py'
 
-    def get_difficulty(self, problem):
-        return problem['difficulty']
+    @property
+    def difficulty(self):
+        return self.problem['difficulty']
 
-    def get_title(self, problem):
-        return problem['questionTitle']
+    @property
+    def title(self):
+        return self.problem['questionTitle']
 
-    def get_frontend_id(self, problem):
-        return problem['questionFrontendId']
+    @property
+    def frontend_id(self):
+        return self.problem['questionFrontendId']
 
-    def get_url(self, problem):
-        return problem['url']
+    @property
+    def url(self):
+        return self.problem['url']
 
-    def get_topic_tags(self, problem):
-        topic_tags = problem['topicTags']
+    @property
+    def topic_tags(self):
+        topic_tags = self.problem['topicTags']
         tags = []
         for topic_tag in topic_tags:
             tags.append(topic_tag['name'])

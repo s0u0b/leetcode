@@ -5,6 +5,23 @@ import sys
 sys.path.append('..')
 from crawler.crawler import Crawler
 
+solution_file_formatter = '''"""
+Problem:
+    {question_frontend_id}. {question_title}
+Difficulty:
+    {difficulty}
+URL:
+    {url}
+Tags:
+    {topic_tags}
+"""
+{code}
+
+
+{test_cases}
+
+'''
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -17,7 +34,7 @@ def main():
     with Crawler() as crawler:
         problem = crawler.get_problem_by_id(problem_id)
         if problem:
-            file = crawler.get_file_name(problem)
+            file = crawler.file_name
             if args.version:
                 file = file.replace('.py', f'_{args.version}.py')
             file = Path(file)
@@ -33,33 +50,19 @@ def main():
             print(f'Create {file} successfully')
 
             with open(file, 'w') as file:
-                question_frontend_id = crawler.get_frontend_id(problem)
-                question_title = crawler.get_title(problem)
-                difficulty = crawler.get_difficulty(problem)
-                url = crawler.get_url(problem)
-                topic_tags = crawler.get_topic_tags(problem)
-                code = crawler.get_python_code(problem)
-                test_cases = crawler.get_test_cases(problem)
-                print('"""', file=file)
-                print(f'Problem:\n'
-                      f'    {question_frontend_id}. {question_title}\n'
-                      f'Difficulty:\n'
-                      f'    {difficulty}\n'
-                      f'URL:\n'
-                      f'    {url}\n'
-                      f'Tags:\n'
-                      f'    {topic_tags}\n'
-                      f'"""\n'
-                      f'\n'
-                      f'\n'
-                      f'{code}\n'
-                      f'\n'
-                      f'\n'
-                      f'{test_cases}\n'
-                      f'\n', file=file)
+
+                print(solution_file_formatter.format(
+                    question_frontend_id=crawler.frontend_id,
+                    question_title=crawler.title,
+                    difficulty=crawler.difficulty,
+                    url=crawler.url,
+                    topic_tags=crawler.topic_tags,
+                    code=crawler.python_code,
+                    test_cases=crawler.test_cases,
+                ), file=file)
                 if args.validator:
-                    function_name = crawler.get_function_name(problem)
-                    parameter_names = crawler.get_parameter_names(problem)
+                    function_name = crawler.function_name
+                    parameter_names = crawler.parameter_names
                     print(f'def validator({function_name}, inputs, expected):\n'
                           f'    {parameter_names} = inputs\n'
                           f'    output = {function_name}({parameter_names})\n'
