@@ -23,11 +23,11 @@ def main():
     for solution in solution_list:
         with open(solution, 'r', encoding="utf-8") as f:
             stat_result = Path(solution).stat()
-            modified = datetime.fromtimestamp(stat_result.st_mtime, tz=timezone(timedelta(hours=+8))).strftime(
+            create_date = datetime.fromtimestamp(stat_result.st_ctime, tz=timezone(timedelta(hours=+8))).strftime(
                 '%Y-%m-%d')
             solution_data = {
                 'file': path_dir + solution,
-                'date': modified
+                'date': create_date
             }
             for line in f:
                 if 'Problem' in line:
