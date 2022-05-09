@@ -1,17 +1,16 @@
 import os
 import re
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from pprint import pprint
-from datetime import datetime, timezone, timedelta
 
-from mdprint import mdprint_list, mdprint_dict, mdprint
+from mdprint import mdprint_list, mdprint
 
 
 def main():
     solution_list = []
-    path_dir = os.path.basename(os.getcwd()) + '/'
 
-    for file in os.listdir():
+    for file in os.listdir('solutions'):
         if file.startswith('a') and file.endswith(".py"):
             solution_list.append(file)
     table_head = ['ID', 'Problem', 'Difficulty', 'Solution', 'Date']
@@ -20,12 +19,12 @@ def main():
     solution_id = []
     solution_tags = {}
     for solution in solution_list:
-        with open(solution, 'r', encoding="utf-8") as f:
-            stat_result = Path(solution).stat()
-            create_date = datetime.fromtimestamp(stat_result.st_ctime, tz=timezone(timedelta(hours=+8))).strftime(
-                '%Y-%m-%d')
+        with open(r'solutions/' + solution, 'r', encoding="utf-8") as f:
+            stat_result = Path(r'solutions/' + solution).stat()
+            create_date = datetime.fromtimestamp(stat_result.st_ctime,
+                                                 tz=timezone(timedelta(hours=+8))).strftime('%Y-%m-%d')
             solution_data = {
-                'file': path_dir + solution,
+                'file': r'solutions/' + solution,
                 'date': create_date
             }
             for line in f:
@@ -83,7 +82,7 @@ def main():
             f'![{solution_tag}](https://img.shields.io/badge/{solution_tag.replace(" ", "_")}-{count}-{color})']
         tags_count += 1
     tag_shields = ' '.join(tag_shields)
-    with open('../README.md', 'w') as readme:
+    with open('README.md', 'w') as readme:
         mdprint('My leetcode solutions', heading=2, file=readme)
         mdprint(statistic_shields, file=readme)
         mdprint('<br>', file=readme)
