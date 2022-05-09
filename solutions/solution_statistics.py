@@ -14,7 +14,6 @@ def main():
     for file in os.listdir():
         if file.startswith('a') and file.endswith(".py"):
             solution_list.append(file)
-    difficulty = {'Easy': 'green', 'Medium': 'orange', 'Hard': 'red', }
     table_head = ['ID', 'Problem', 'Difficulty', 'Solution', 'Date']
     solution_table = [table_head, ]
     difficulty_statistic = {}
