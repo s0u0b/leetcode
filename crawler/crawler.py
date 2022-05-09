@@ -118,7 +118,7 @@ class Crawler:
             inputs, output = inputs_and_output
             inputs = self.escape(inputs)
             output = self.escape(output)
-            test_cases += test_case_formatter.format(self.parse_input_test_case(inputs), output)
+            test_cases += test_case_formatter.format(self.parse_input_test_case(inputs), self.parse_output_test_case(output))
         test_cases = 'tests = [' + test_cases + '\n]'
         return test_cases
 
@@ -159,6 +159,7 @@ class Crawler:
         last_comma = last_equal = 0
         input_list = []
         parameter_list = []
+        output_list = []
         for i, c in enumerate(inputs):
             if c == ',':
                 if inputs[last_comma + 1:last_equal]:
@@ -167,13 +168,21 @@ class Crawler:
             if c == '=':
                 if inputs[last_equal + 1:last_comma]:
                     input_list += [inputs[last_equal + 1:last_comma].strip()]
+                    output_list += [inputs[last_equal + 1:last_comma].strip()]
                 last_equal = i
         else:
             input_list += [inputs[last_equal + 1:].strip()]
+            output_list += [inputs[last_equal + 1:].strip()]
             parameter_list += [inputs[last_comma + 1:last_equal].strip()]
         input_list = ', '.join(input_list)
         parameter_list = ', '.join(parameter_list)
-        return {'input_list': input_list, 'parameter_list': parameter_list}
+        return {'input_list': input_list, 'parameter_list': parameter_list, 'output_list': output_list}
+
+    def parse_output_test_case(self, outputs):
+        output_test_case = self.parse_test_case_and_parameter_names(outputs)['output_list']
+        if len(output_test_case) > 1:
+            print(f'Multiple output example: {", ".join(output_test_case)}, pick first')
+        return output_test_case[0]
 
     def parse_input_test_case(self, inputs):
         return self.parse_test_case_and_parameter_names(inputs)['input_list']
