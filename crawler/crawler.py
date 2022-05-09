@@ -1,7 +1,8 @@
 import json
 import re
-import requests
 from pathlib import Path
+
+import requests
 
 test_case_formatter = '''
     (
@@ -100,22 +101,6 @@ class Crawler:
         else:
             self.problem = None
 
-    # todo: refactor parse_inputs and parse_parameter_names to reuse same function
-    def parse_inputs(self, inputs):
-        last_comma = 0
-        last_equal = 0
-        input_list = []
-        for i, c in enumerate(inputs):
-            if c == ',':
-                last_comma = i
-            if c == '=':
-                if inputs[last_equal + 1:last_comma]:
-                    input_list += [inputs[last_equal + 1:last_comma].strip()]
-                last_equal = i
-        else:
-            input_list += [inputs[last_equal + 1:].strip()]
-        return ', '.join(input_list)
-
     def escape(self, string):
         return string.replace(
             '\n', '').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace(
@@ -133,7 +118,7 @@ class Crawler:
             inputs, output = inputs_and_output
             inputs = self.escape(inputs)
             output = self.escape(output)
-            test_cases += test_case_formatter.format(self.parse_inputs(inputs), output)
+            test_cases += test_case_formatter.format(self.parse_input_test_case(inputs), output)
         test_cases = 'tests = [' + test_cases + '\n]'
         return test_cases
 
@@ -170,20 +155,31 @@ class Crawler:
         parameter_names = self.parse_parameter_names(inputs)
         return parameter_names
 
-    def parse_parameter_names(self, inputs):
-        last_equal = 0
-        last_comma = 0
+    def parse_test_case_and_parameter_names(self, inputs):
+        last_comma = last_equal = 0
         input_list = []
+        parameter_list = []
         for i, c in enumerate(inputs):
-            if c == '=':
-                last_equal = i
             if c == ',':
                 if inputs[last_comma + 1:last_equal]:
-                    input_list += [inputs[last_comma + 1:last_equal].strip()]
+                    parameter_list += [inputs[last_comma + 1:last_equal].strip()]
                 last_comma = i
+            if c == '=':
+                if inputs[last_equal + 1:last_comma]:
+                    input_list += [inputs[last_equal + 1:last_comma].strip()]
+                last_equal = i
         else:
-            input_list += [inputs[last_comma + 1:last_equal].strip()]
-        return ', '.join(input_list)
+            input_list += [inputs[last_equal + 1:].strip()]
+            parameter_list += [inputs[last_comma + 1:last_equal].strip()]
+        input_list = ', '.join(input_list)
+        parameter_list = ', '.join(parameter_list)
+        return {'input_list': input_list, 'parameter_list': parameter_list}
+
+    def parse_input_test_case(self, inputs):
+        return self.parse_test_case_and_parameter_names(inputs)['input_list']
+
+    def parse_parameter_names(self, inputs):
+        return self.parse_test_case_and_parameter_names(inputs)['parameter_list']
 
     @property
     def file(self):
