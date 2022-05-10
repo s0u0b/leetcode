@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-67-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-89-inactive)
+![](https://img.shields.io/badge/Easy-73-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-95-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -89,4 +89,10 @@
 | 1323 | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number) | Easy | [a01323_maximum_69_number.py](solutions/a01323_maximum_69_number.py) |
 | 1337 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix) | Easy | [a01337_the_k_weakest_rows_in_a_matrix.py](solutions/a01337_the_k_weakest_rows_in_a_matrix.py) |
 | 1342 | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero) | Easy | [a01342_number_of_steps_to_reduce_a_number_to_zero.py](solutions/a01342_number_of_steps_to_reduce_a_number_to_zero.py) |
+| 1346 | [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist) | Easy | [a01346_check_if_n_and_its_double_exist.py](solutions/a01346_check_if_n_and_its_double_exist.py) |
+| 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix) | Easy | [a01351_count_negative_numbers_in_a_sorted_matrix.py](solutions/a01351_count_negative_numbers_in_a_sorted_matrix.py) |
+| 1365 | [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number) | Easy | [a01365_how_many_numbers_are_smaller_than_the_current_number.py](solutions/a01365_how_many_numbers_are_smaller_than_the_current_number.py) |
+| 1370 | [Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string) | Easy | [a01370_increasing_decreasing_string.py](solutions/a01370_increasing_decreasing_string.py) |
+| 1374 | [Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts) | Easy | [a01374_generate_a_string_with_characters_that_have_odd_counts.py](solutions/a01374_generate_a_string_with_characters_that_have_odd_counts.py) |
+| 1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix) | Easy | [a01380_lucky_numbers_in_a_matrix.py](solutions/a01380_lucky_numbers_in_a_matrix.py) |
 
