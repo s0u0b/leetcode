@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-92-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-114-inactive)
+![](https://img.shields.io/badge/Easy-98-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-120-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -114,4 +114,10 @@
 | 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number) | Easy | [a01539_kth_missing_positive_number.py](solutions/a01539_kth_missing_positive_number.py) |
 | 1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum) | Easy | [a01572_matrix_diagonal_sum.py](solutions/a01572_matrix_diagonal_sum.py) |
 | 1608 | [Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x) | Easy | [a01608_special_array_with_x_elements_greater_than_or_equal_x.py](solutions/a01608_special_array_with_x_elements_greater_than_or_equal_x.py) |
+| 1640 | [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation) | Easy | [a01640_check_array_formation_through_concatenation.py](solutions/a01640_check_array_formation_through_concatenation.py) |
+| 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth) | Easy | [a01672_richest_customer_wealth.py](solutions/a01672_richest_customer_wealth.py) |
+| 1678 | [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation) | Easy | [a01678_goal_parser_interpretation.py](solutions/a01678_goal_parser_interpretation.py) |
+| 1684 | [Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings) | Easy | [a01684_count_the_number_of_consistent_strings.py](solutions/a01684_count_the_number_of_consistent_strings.py) |
+| 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | Easy | [a01720_decode_xored_array.py](solutions/a01720_decode_xored_array.py) |
+| 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule) | Easy | [a01773_count_items_matching_a_rule.py](solutions/a01773_count_items_matching_a_rule.py) |
 
