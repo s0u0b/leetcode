@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-62-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-84-inactive)
+![](https://img.shields.io/badge/Easy-67-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-89-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -84,4 +84,9 @@
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits) | Easy | [a01295_find_numbers_with_even_number_of_digits.py](solutions/a01295_find_numbers_with_even_number_of_digits.py) |
 | 1299 | [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side) | Easy | [a01299_replace_elements_with_greatest_element_on_right_side.py](solutions/a01299_replace_elements_with_greatest_element_on_right_side.py) |
 | 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero) | Easy | [a01304_find_n_unique_integers_sum_up_to_zero.py](solutions/a01304_find_n_unique_integers_sum_up_to_zero.py) |
+| 1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping) | Easy | [a01309_decrypt_string_from_alphabet_to_integer_mapping.py](solutions/a01309_decrypt_string_from_alphabet_to_integer_mapping.py) |
+| 1313 | [Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list) | Easy | [a01313_decompress_run_length_encoded_list.py](solutions/a01313_decompress_run_length_encoded_list.py) |
+| 1323 | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number) | Easy | [a01323_maximum_69_number.py](solutions/a01323_maximum_69_number.py) |
+| 1337 | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix) | Easy | [a01337_the_k_weakest_rows_in_a_matrix.py](solutions/a01337_the_k_weakest_rows_in_a_matrix.py) |
+| 1342 | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero) | Easy | [a01342_number_of_steps_to_reduce_a_number_to_zero.py](solutions/a01342_number_of_steps_to_reduce_a_number_to_zero.py) |
 
