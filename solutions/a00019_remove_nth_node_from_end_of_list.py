@@ -7,6 +7,8 @@ URL:
     https://leetcode.com/problems/remove-nth-node-from-end-of-list
 Tags:
     Linked List, Two Pointers
+Date:
+    2022-05-10T14:00:29.877163+08:00
 """
 from typing import List, Optional
 import sys

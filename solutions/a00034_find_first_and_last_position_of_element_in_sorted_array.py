@@ -7,6 +7,8 @@ URL:
     https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
 Tags:
     Array, Binary Search
+Date:
+    2022-05-10T14:00:29.877163+08:00
 """
 from typing import List
 

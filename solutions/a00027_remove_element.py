@@ -7,6 +7,8 @@ URL:
     https://leetcode.com/problems/remove-element
 Tags:
     Array, Two Pointers
+Date:
+    2022-05-10T14:00:29.877163+08:00
 """
 from typing import List
 
