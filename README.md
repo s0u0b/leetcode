@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-79-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-101-inactive)
+![](https://img.shields.io/badge/Easy-86-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-108-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -101,4 +101,11 @@
 | 1436 | [Destination City](https://leetcode.com/problems/destination-city) | Easy | [a01436_destination_city.py](solutions/a01436_destination_city.py) |
 | 1450 | [Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time) | Easy | [a01450_number_of_students_doing_homework_at_a_given_time.py](solutions/a01450_number_of_students_doing_homework_at_a_given_time.py) |
 | 1460 | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays) | Easy | [a01460_make_two_arrays_equal_by_reversing_sub_arrays.py](solutions/a01460_make_two_arrays_equal_by_reversing_sub_arrays.py) |
+| 1464 | [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array) | Easy | [a01464_maximum_product_of_two_elements_in_an_array.py](solutions/a01464_maximum_product_of_two_elements_in_an_array.py) |
+| 1470 | [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array) | Easy | [a01470_shuffle_the_array.py](solutions/a01470_shuffle_the_array.py) |
+| 1475 | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop) | Easy | [a01475_final_prices_with_a_special_discount_in_a_shop.py](solutions/a01475_final_prices_with_a_special_discount_in_a_shop.py) |
+| 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array) | Easy | [a01480_running_sum_of_1d_array.py](solutions/a01480_running_sum_of_1d_array.py) |
+| 1486 | [XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array) | Easy | [a01486_xor_operation_in_an_array.py](solutions/a01486_xor_operation_in_an_array.py) |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary) | Easy | [a01491_average_salary_excluding_the_minimum_and_maximum_salary.py](solutions/a01491_average_salary_excluding_the_minimum_and_maximum_salary.py) |
+| 1502 | [Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence) | Easy | [a01502_can_make_arithmetic_progression_from_sequence.py](solutions/a01502_can_make_arithmetic_progression_from_sequence.py) |
 
