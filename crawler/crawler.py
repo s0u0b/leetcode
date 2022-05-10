@@ -5,7 +5,6 @@ from pathlib import Path
 import requests
 import datetime
 
-
 test_case_formatter = '''
     (
         ({},
@@ -107,7 +106,9 @@ class Crawler:
         return string.replace(
             '\n', '').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace(
             '&quot;', '"').replace('&#39;', "'").replace('true', 'True').replace('false', 'False').replace(
-            '\t', '    ').replace('null', 'None').replace('<u>', '').replace('</u>', '')
+            '\t', '    ').replace('null', 'None').replace('<u>', '').replace('</u>', '').replace('&nbsp;',
+                                                                                                 '\n').replace(
+            '<strong>', '').replace('</strong>', '')
 
     @property
     def test_cases(self):
@@ -120,7 +121,8 @@ class Crawler:
             inputs, output = inputs_and_output
             inputs = self.escape(inputs)
             output = self.escape(output)
-            test_cases += test_case_formatter.format(self.parse_input_test_case(inputs), self.parse_output_test_case(output))
+            test_cases += test_case_formatter.format(self.parse_input_test_case(inputs),
+                                                     self.parse_output_test_case(output))
         test_cases = 'tests = [' + test_cases + '\n]'
         return test_cases
 
