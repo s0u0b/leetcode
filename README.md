@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-37-success) ![](https://img.shields.io/badge/Medium-20-important) ![](https://img.shields.io/badge/Total-57-inactive)
+![](https://img.shields.io/badge/Easy-42-success) ![](https://img.shields.io/badge/Medium-21-important) ![](https://img.shields.io/badge/Total-63-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -57,4 +57,10 @@
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [a00704_binary_search.py](solutions/a00704_binary_search.py) |
 | 709 | [To Lower Case](https://leetcode.com/problems/to-lower-case) | Easy | [a00709_to_lower_case.py](solutions/a00709_to_lower_case.py) |
 | 728 | [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers) | Easy | [a00728_self_dividing_numbers.py](solutions/a00728_self_dividing_numbers.py) |
+| 733 | [Flood Fill](https://leetcode.com/problems/flood-fill) | Easy | [a00733_flood_fill.py](solutions/a00733_flood_fill.py) |
+| 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target) | Easy | [a00744_find_smallest_letter_greater_than_target.py](solutions/a00744_find_smallest_letter_greater_than_target.py) |
+| 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) | Easy | [a00771_jewels_and_stones.py](solutions/a00771_jewels_and_stones.py) |
+| 784 | [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation) | Medium | [a00784_letter_case_permutation.py](solutions/a00784_letter_case_permutation.py) |
+| 804 | [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words) | Easy | [a00804_unique_morse_code_words.py](solutions/a00804_unique_morse_code_words.py) |
+| 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image) | Easy | [a00832_flipping_an_image.py](solutions/a00832_flipping_an_image.py) |
 
