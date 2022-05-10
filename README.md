@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-34-success) ![](https://img.shields.io/badge/Medium-20-important) ![](https://img.shields.io/badge/Total-54-inactive)
+![](https://img.shields.io/badge/Easy-37-success) ![](https://img.shields.io/badge/Medium-20-important) ![](https://img.shields.io/badge/Total-57-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -54,4 +54,7 @@
 | 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) | Medium | [a00633_sum_of_square_numbers.py](solutions/a00633_sum_of_square_numbers.py) |
 | 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin) | Easy | [a00657_robot_return_to_origin.py](solutions/a00657_robot_return_to_origin.py) |
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Medium | [a00695_max_area_of_island.py](solutions/a00695_max_area_of_island.py) |
+| 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [a00704_binary_search.py](solutions/a00704_binary_search.py) |
+| 709 | [To Lower Case](https://leetcode.com/problems/to-lower-case) | Easy | [a00709_to_lower_case.py](solutions/a00709_to_lower_case.py) |
+| 728 | [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers) | Easy | [a00728_self_dividing_numbers.py](solutions/a00728_self_dividing_numbers.py) |
 
