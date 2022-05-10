@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-86-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-108-inactive)
+![](https://img.shields.io/badge/Easy-92-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-114-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -108,4 +108,10 @@
 | 1486 | [XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array) | Easy | [a01486_xor_operation_in_an_array.py](solutions/a01486_xor_operation_in_an_array.py) |
 | 1491 | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary) | Easy | [a01491_average_salary_excluding_the_minimum_and_maximum_salary.py](solutions/a01491_average_salary_excluding_the_minimum_and_maximum_salary.py) |
 | 1502 | [Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence) | Easy | [a01502_can_make_arithmetic_progression_from_sequence.py](solutions/a01502_can_make_arithmetic_progression_from_sequence.py) |
+| 1512 | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs) | Easy | [a01512_number_of_good_pairs.py](solutions/a01512_number_of_good_pairs.py) |
+| 1523 | [Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range) | Easy | [a01523_count_odd_numbers_in_an_interval_range.py](solutions/a01523_count_odd_numbers_in_an_interval_range.py) |
+| 1528 | [Shuffle String](https://leetcode.com/problems/shuffle-string) | Easy | [a01528_shuffle_string.py](solutions/a01528_shuffle_string.py) |
+| 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number) | Easy | [a01539_kth_missing_positive_number.py](solutions/a01539_kth_missing_positive_number.py) |
+| 1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum) | Easy | [a01572_matrix_diagonal_sum.py](solutions/a01572_matrix_diagonal_sum.py) |
+| 1608 | [Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x) | Easy | [a01608_special_array_with_x_elements_greater_than_or_equal_x.py](solutions/a01608_special_array_with_x_elements_greater_than_or_equal_x.py) |
 
