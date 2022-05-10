@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-32-success) ![](https://img.shields.io/badge/Medium-18-important) ![](https://img.shields.io/badge/Total-50-inactive)
+![](https://img.shields.io/badge/Easy-34-success) ![](https://img.shields.io/badge/Medium-20-important) ![](https://img.shields.io/badge/Total-54-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -50,4 +50,8 @@
 | 561 | [Array Partition I](https://leetcode.com/problems/array-partition-i) | Easy | [a00561_array_partition_i.py](solutions/a00561_array_partition_i.py) |
 | 566 | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix) | Easy | [a00566_reshape_the_matrix.py](solutions/a00566_reshape_the_matrix.py)<br>[a00566_reshape_the_matrix_other_solution.py](solutions/a00566_reshape_the_matrix_other_solution.py) |
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | Medium | [a00567_permutation_in_string.py](solutions/a00567_permutation_in_string.py) |
+| 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy | [a00617_merge_two_binary_trees.py](solutions/a00617_merge_two_binary_trees.py) |
+| 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) | Medium | [a00633_sum_of_square_numbers.py](solutions/a00633_sum_of_square_numbers.py) |
+| 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin) | Easy | [a00657_robot_return_to_origin.py](solutions/a00657_robot_return_to_origin.py) |
+| 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | Medium | [a00695_max_area_of_island.py](solutions/a00695_max_area_of_island.py) |
 
