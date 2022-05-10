@@ -107,7 +107,7 @@ class Crawler:
         return string.replace(
             '\n', '').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace(
             '&quot;', '"').replace('&#39;', "'").replace('true', 'True').replace('false', 'False').replace(
-            '\t', '    ').replace('null', 'None')
+            '\t', '    ').replace('null', 'None').replace('<u>', '').replace('</u>', '')
 
     @property
     def test_cases(self):
