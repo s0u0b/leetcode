@@ -67,20 +67,10 @@ def main():
         statistic_shields += [
             f'![](https://img.shields.io/badge/{difficulty}-{statistic}-{difficulty_color[difficulty]})']
     statistic_shields = ' '.join(statistic_shields)
-    color_list = ['blue', 'red', 'green', 'orange', 'lightgrey', 'yellow']
-    tag_shields = []
-    tags_count = 0
-    for solution_tag, count in solution_tags.items():
-        color = color_list[tags_count % len(color_list)]
-        tag_shields += [
-            f'![{solution_tag}](https://img.shields.io/badge/{solution_tag.replace(" ", "_")}-{count}-{color})']
-        tags_count += 1
-    tag_shields = ' '.join(tag_shields)
     with open('README.md', 'w') as readme:
         mdprint('My leetcode solutions', heading=2, file=readme)
         mdprint(statistic_shields, file=readme)
         mdprint('<br>', file=readme)
-        mdprint(tag_shields, file=readme)
         mdprint_list(solution_table, file=readme)
 
 
