@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-50-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-72-inactive)
+![](https://img.shields.io/badge/Easy-62-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-84-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -72,4 +72,16 @@
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | Easy | [a00977_squares_of_a_sorted_array.py](solutions/a00977_squares_of_a_sorted_array.py) |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Medium | [a00994_rotting_oranges.py](solutions/a00994_rotting_oranges.py) |
 | 1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses) | Easy | [a01021_remove_outermost_parentheses.py](solutions/a01021_remove_outermost_parentheses.py) |
+| 1089 | [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros) | Easy | [a01089_duplicate_zeros.py](solutions/a01089_duplicate_zeros.py) |
+| 1108 | [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address) | Easy | [a01108_defanging_an_ip_address.py](solutions/a01108_defanging_an_ip_address.py) |
+| 1207 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences) | Easy | [a01207_unique_number_of_occurrences.py](solutions/a01207_unique_number_of_occurrences.py) |
+| 1217 | [Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position) | Easy | [a01217_minimum_cost_to_move_chips_to_the_same_position.py](solutions/a01217_minimum_cost_to_move_chips_to_the_same_position.py) |
+| 1221 | [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings) | Easy | [a01221_split_a_string_in_balanced_strings.py](solutions/a01221_split_a_string_in_balanced_strings.py) |
+| 1252 | [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix) | Easy | [a01252_cells_with_odd_values_in_a_matrix.py](solutions/a01252_cells_with_odd_values_in_a_matrix.py) |
+| 1266 | [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points) | Easy | [a01266_minimum_time_visiting_all_points.py](solutions/a01266_minimum_time_visiting_all_points.py) |
+| 1281 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer) | Easy | [a01281_subtract_the_product_and_sum_of_digits_of_an_integer.py](solutions/a01281_subtract_the_product_and_sum_of_digits_of_an_integer.py) |
+| 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer) | Easy | [a01290_convert_binary_number_in_a_linked_list_to_integer.py](solutions/a01290_convert_binary_number_in_a_linked_list_to_integer.py) |
+| 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits) | Easy | [a01295_find_numbers_with_even_number_of_digits.py](solutions/a01295_find_numbers_with_even_number_of_digits.py) |
+| 1299 | [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side) | Easy | [a01299_replace_elements_with_greatest_element_on_right_side.py](solutions/a01299_replace_elements_with_greatest_element_on_right_side.py) |
+| 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero) | Easy | [a01304_find_n_unique_integers_sum_up_to_zero.py](solutions/a01304_find_n_unique_integers_sum_up_to_zero.py) |
 
