@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-73-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-95-inactive)
+![](https://img.shields.io/badge/Easy-79-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-101-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -95,4 +95,10 @@
 | 1370 | [Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string) | Easy | [a01370_increasing_decreasing_string.py](solutions/a01370_increasing_decreasing_string.py) |
 | 1374 | [Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts) | Easy | [a01374_generate_a_string_with_characters_that_have_odd_counts.py](solutions/a01374_generate_a_string_with_characters_that_have_odd_counts.py) |
 | 1380 | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix) | Easy | [a01380_lucky_numbers_in_a_matrix.py](solutions/a01380_lucky_numbers_in_a_matrix.py) |
+| 1385 | [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays) | Easy | [a01385_find_the_distance_value_between_two_arrays.py](solutions/a01385_find_the_distance_value_between_two_arrays.py) |
+| 1389 | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order) | Easy | [a01389_create_target_array_in_the_given_order.py](solutions/a01389_create_target_array_in_the_given_order.py) |
+| 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | Easy | [a01431_kids_with_the_greatest_number_of_candies.py](solutions/a01431_kids_with_the_greatest_number_of_candies.py) |
+| 1436 | [Destination City](https://leetcode.com/problems/destination-city) | Easy | [a01436_destination_city.py](solutions/a01436_destination_city.py) |
+| 1450 | [Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time) | Easy | [a01450_number_of_students_doing_homework_at_a_given_time.py](solutions/a01450_number_of_students_doing_homework_at_a_given_time.py) |
+| 1460 | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays) | Easy | [a01460_make_two_arrays_equal_by_reversing_sub_arrays.py](solutions/a01460_make_two_arrays_equal_by_reversing_sub_arrays.py) |
 
