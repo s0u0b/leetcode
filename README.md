@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-27-success) ![](https://img.shields.io/badge/Medium-14-important) ![](https://img.shields.io/badge/Total-41-inactive)
+![](https://img.shields.io/badge/Easy-28-success) ![](https://img.shields.io/badge/Medium-16-important) ![](https://img.shields.io/badge/Total-44-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -43,4 +43,6 @@
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function) | Medium | [a00396_rotate_function.py](solutions/a00396_rotate_function.py) |
 | 441 | [Arranging Coins](https://leetcode.com/problems/arranging-coins) | Easy | [a00441_arranging_coins.py](solutions/a00441_arranging_coins.py) |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [a00461_hamming_distance.py](solutions/a00461_hamming_distance.py) |
+| 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones) | Easy | [a00485_max_consecutive_ones.py](solutions/a00485_max_consecutive_ones.py) |
+| 498 | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | Medium | [a00498_diagonal_traverse.py](solutions/a00498_diagonal_traverse.py)<br>[a00498_diagonal_traverse_fun.py](solutions/a00498_diagonal_traverse_fun.py) |
 
