@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-42-success) ![](https://img.shields.io/badge/Medium-21-important) ![](https://img.shields.io/badge/Total-63-inactive)
+![](https://img.shields.io/badge/Easy-50-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-72-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -63,4 +63,13 @@
 | 784 | [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation) | Medium | [a00784_letter_case_permutation.py](solutions/a00784_letter_case_permutation.py) |
 | 804 | [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words) | Easy | [a00804_unique_morse_code_words.py](solutions/a00804_unique_morse_code_words.py) |
 | 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image) | Easy | [a00832_flipping_an_image.py](solutions/a00832_flipping_an_image.py) |
+| 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array) | Easy | [a00852_peak_index_in_a_mountain_array.py](solutions/a00852_peak_index_in_a_mountain_array.py) |
+| 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list) | Easy | [a00876_middle_of_the_linked_list.py](solutions/a00876_middle_of_the_linked_list.py) |
+| 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity) | Easy | [a00905_sort_array_by_parity.py](solutions/a00905_sort_array_by_parity.py) |
+| 941 | [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array) | Easy | [a00941_valid_mountain_array.py](solutions/a00941_valid_mountain_array.py) |
+| 942 | [DI String Match](https://leetcode.com/problems/di-string-match) | Easy | [a00942_di_string_match.py](solutions/a00942_di_string_match.py) |
+| 961 | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array) | Easy | [a00961_n_repeated_element_in_size_2n_array.py](solutions/a00961_n_repeated_element_in_size_2n_array.py) |
+| 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | Easy | [a00977_squares_of_a_sorted_array.py](solutions/a00977_squares_of_a_sorted_array.py) |
+| 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | Medium | [a00994_rotting_oranges.py](solutions/a00994_rotting_oranges.py) |
+| 1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses) | Easy | [a01021_remove_outermost_parentheses.py](solutions/a01021_remove_outermost_parentheses.py) |
 
