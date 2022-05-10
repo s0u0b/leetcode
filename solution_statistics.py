@@ -13,19 +13,15 @@ def main():
     for file in os.listdir('solutions'):
         if file.startswith('a') and file.endswith(".py"):
             solution_list.append(file)
-    table_head = ['ID', 'Problem', 'Difficulty', 'Solution', 'Date']
+    table_head = ['ID', 'Problem', 'Difficulty', 'Solution']
     solution_table = [table_head, ]
     difficulty_statistic = {}
     solution_id = []
     solution_tags = {}
     for solution in solution_list:
         with open(r'solutions/' + solution, 'r', encoding="utf-8") as f:
-            stat_result = Path(r'solutions/' + solution).stat()
-            create_date = datetime.fromtimestamp(stat_result.st_ctime,
-                                                 tz=timezone(timedelta(hours=+8))).strftime('%Y-%m-%d')
             solution_data = {
                 'file': r'solutions/' + solution,
-                'date': create_date
             }
             for line in f:
                 if 'Problem' in line:
@@ -56,14 +52,12 @@ def main():
                         f'[{solution_data["Problem"]}]({solution_data["URL"]})',
                         solution_data['Difficulty'],
                         f'[{solution}]({solution_data["file"]})',
-                        solution_data["date"],
                     ]
                 )
             else:
                 for i, solution_statistic in enumerate(solution_table):
                     if solution_statistic[0] == solution_data['ID']:
                         solution_statistic[3] += f'<br>[{solution}]({solution_data["file"]})'
-                        solution_statistic[4] += f'<br>{solution_data["date"]}'
                         break
     total = sum([solution_statistic for solution_statistic in difficulty_statistic.values()])
     difficulty_statistic['Total'] = total

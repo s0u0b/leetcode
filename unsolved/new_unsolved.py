@@ -14,6 +14,8 @@ URL:
     {url}
 Tags:
     {topic_tags}
+Date:
+    {date}
 """
 {code}
 
@@ -65,6 +67,7 @@ def main():
                     topic_tags=crawler.topic_tags,
                     code=crawler.python_code,
                     test_cases=crawler.test_cases,
+                    date=crawler.date,
                 ), file=file)
                 if args.validator:
                     function_name = crawler.function_name

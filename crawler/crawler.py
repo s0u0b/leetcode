@@ -3,6 +3,8 @@ import re
 from pathlib import Path
 
 import requests
+import datetime
+
 
 test_case_formatter = '''
     (
@@ -220,3 +222,7 @@ class Crawler:
         for topic_tag in topic_tags:
             tags.append(topic_tag['name'])
         return ', '.join(tags)
+
+    @property
+    def date(self):
+        return datetime.datetime.now().astimezone().isoformat()
