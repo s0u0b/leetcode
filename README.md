@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-28-success) ![](https://img.shields.io/badge/Medium-16-important) ![](https://img.shields.io/badge/Total-44-inactive)
+![](https://img.shields.io/badge/Easy-32-success) ![](https://img.shields.io/badge/Medium-18-important) ![](https://img.shields.io/badge/Total-50-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -45,4 +45,9 @@
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [a00461_hamming_distance.py](solutions/a00461_hamming_distance.py) |
 | 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones) | Easy | [a00485_max_consecutive_ones.py](solutions/a00485_max_consecutive_ones.py) |
 | 498 | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse) | Medium | [a00498_diagonal_traverse.py](solutions/a00498_diagonal_traverse.py)<br>[a00498_diagonal_traverse_fun.py](solutions/a00498_diagonal_traverse_fun.py) |
+| 542 | [01 Matrix](https://leetcode.com/problems/01-matrix) | Medium | [a00542_01_matrix.py](solutions/a00542_01_matrix.py) |
+| 557 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii) | Easy | [a00557_reverse_words_in_a_string_iii.py](solutions/a00557_reverse_words_in_a_string_iii.py) |
+| 561 | [Array Partition I](https://leetcode.com/problems/array-partition-i) | Easy | [a00561_array_partition_i.py](solutions/a00561_array_partition_i.py) |
+| 566 | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix) | Easy | [a00566_reshape_the_matrix.py](solutions/a00566_reshape_the_matrix.py)<br>[a00566_reshape_the_matrix_other_solution.py](solutions/a00566_reshape_the_matrix_other_solution.py) |
+| 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | Medium | [a00567_permutation_in_string.py](solutions/a00567_permutation_in_string.py) |
 
