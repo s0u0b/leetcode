@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-98-success) ![](https://img.shields.io/badge/Medium-24-important) ![](https://img.shields.io/badge/Total-122-inactive)
+![](https://img.shields.io/badge/Easy-98-success) ![](https://img.shields.io/badge/Medium-25-important) ![](https://img.shields.io/badge/Total-123-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -28,6 +28,7 @@
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [a00121_best_time_to_buy_and_sell_stock.py](solutions/a00121_best_time_to_buy_and_sell_stock.py) |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Easy | [a00144_binary_tree_preorder_traversal.py](solutions/a00144_binary_tree_preorder_traversal.py) |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [a00153_find_minimum_in_rotated_sorted_array.py](solutions/a00153_find_minimum_in_rotated_sorted_array.py) |
+| 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [a00162_find_peak_element.py](solutions/a00162_find_peak_element.py) |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Medium | [a00167_two_sum_ii_input_array_is_sorted.py](solutions/a00167_two_sum_ii_input_array_is_sorted.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Medium | [a00189_rotate_array.py](solutions/a00189_rotate_array.py) |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [a00200_number_of_islands.py](solutions/a00200_number_of_islands.py) |
