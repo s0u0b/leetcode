@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-98-success) ![](https://img.shields.io/badge/Medium-22-important) ![](https://img.shields.io/badge/Total-120-inactive)
+![](https://img.shields.io/badge/Easy-98-success) ![](https://img.shields.io/badge/Medium-24-important) ![](https://img.shields.io/badge/Total-122-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -10,6 +10,7 @@
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [a00021_merge_two_sorted_lists.py](solutions/a00021_merge_two_sorted_lists.py) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy | [a00026_remove_duplicates_from_sorted_array.py](solutions/a00026_remove_duplicates_from_sorted_array.py) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy | [a00027_remove_element.py](solutions/a00027_remove_element.py) |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [a00033_search_in_rotated_sorted_array.py](solutions/a00033_search_in_rotated_sorted_array.py) |
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [a00034_find_first_and_last_position_of_element_in_sorted_array.py](solutions/a00034_find_first_and_last_position_of_element_in_sorted_array.py) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [a00035_search_insert_position.py](solutions/a00035_search_insert_position.py) |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [a00036_valid_sudoku.py](solutions/a00036_valid_sudoku.py) |
@@ -26,6 +27,7 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [a00118_pascals_triangle.py](solutions/a00118_pascals_triangle.py) |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [a00121_best_time_to_buy_and_sell_stock.py](solutions/a00121_best_time_to_buy_and_sell_stock.py) |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Easy | [a00144_binary_tree_preorder_traversal.py](solutions/a00144_binary_tree_preorder_traversal.py) |
+| 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [a00153_find_minimum_in_rotated_sorted_array.py](solutions/a00153_find_minimum_in_rotated_sorted_array.py) |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Medium | [a00167_two_sum_ii_input_array_is_sorted.py](solutions/a00167_two_sum_ii_input_array_is_sorted.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Medium | [a00189_rotate_array.py](solutions/a00189_rotate_array.py) |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [a00200_number_of_islands.py](solutions/a00200_number_of_islands.py) |
