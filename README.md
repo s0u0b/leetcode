@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-100-success) ![](https://img.shields.io/badge/Medium-26-important) ![](https://img.shields.io/badge/Total-126-inactive)
+![](https://img.shields.io/badge/Easy-101-success) ![](https://img.shields.io/badge/Medium-26-important) ![](https://img.shields.io/badge/Total-127-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -28,6 +28,7 @@
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Medium | [a00116_populating_next_right_pointers_in_each_node.py](solutions/a00116_populating_next_right_pointers_in_each_node.py) |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [a00118_pascals_triangle.py](solutions/a00118_pascals_triangle.py) |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [a00121_best_time_to_buy_and_sell_stock.py](solutions/a00121_best_time_to_buy_and_sell_stock.py) |
+| 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [a00136_single_number.py](solutions/a00136_single_number.py) |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Easy | [a00144_binary_tree_preorder_traversal.py](solutions/a00144_binary_tree_preorder_traversal.py) |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [a00153_find_minimum_in_rotated_sorted_array.py](solutions/a00153_find_minimum_in_rotated_sorted_array.py) |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [a00162_find_peak_element.py](solutions/a00162_find_peak_element.py) |
