@@ -1,10 +1,11 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-100-success) ![](https://img.shields.io/badge/Medium-25-important) ![](https://img.shields.io/badge/Total-125-inactive)
+![](https://img.shields.io/badge/Easy-100-success) ![](https://img.shields.io/badge/Medium-26-important) ![](https://img.shields.io/badge/Total-126-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
 |----|----|----|----|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [a00001_two_sum.py](solutions/a00001_two_sum.py)<br>[a00001_two_sum_use_dict.py](solutions/a00001_two_sum_use_dict.py) |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [a00002_add_two_numbers.py](solutions/a00002_add_two_numbers.py) |
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | [a00003_longest_substring_without_repeating_characters.py](solutions/a00003_longest_substring_without_repeating_characters.py) |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Medium | [a00019_remove_nth_node_from_end_of_list.py](solutions/a00019_remove_nth_node_from_end_of_list.py) |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [a00021_merge_two_sorted_lists.py](solutions/a00021_merge_two_sorted_lists.py) |
