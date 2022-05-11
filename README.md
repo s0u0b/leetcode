@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-98-success) ![](https://img.shields.io/badge/Medium-25-important) ![](https://img.shields.io/badge/Total-123-inactive)
+![](https://img.shields.io/badge/Easy-100-success) ![](https://img.shields.io/badge/Medium-25-important) ![](https://img.shields.io/badge/Total-125-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -10,6 +10,7 @@
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [a00021_merge_two_sorted_lists.py](solutions/a00021_merge_two_sorted_lists.py) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy | [a00026_remove_duplicates_from_sorted_array.py](solutions/a00026_remove_duplicates_from_sorted_array.py) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy | [a00027_remove_element.py](solutions/a00027_remove_element.py) |
+| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [a00028_implement_strstr.py](solutions/a00028_implement_strstr.py) |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [a00033_search_in_rotated_sorted_array.py](solutions/a00033_search_in_rotated_sorted_array.py) |
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [a00034_find_first_and_last_position_of_element_in_sorted_array.py](solutions/a00034_find_first_and_last_position_of_element_in_sorted_array.py) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [a00035_search_insert_position.py](solutions/a00035_search_insert_position.py) |
@@ -68,6 +69,7 @@
 | 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image) | Easy | [a00832_flipping_an_image.py](solutions/a00832_flipping_an_image.py) |
 | 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array) | Easy | [a00852_peak_index_in_a_mountain_array.py](solutions/a00852_peak_index_in_a_mountain_array.py) |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list) | Easy | [a00876_middle_of_the_linked_list.py](solutions/a00876_middle_of_the_linked_list.py) |
+| 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array) | Easy | [a00896_monotonic_array.py](solutions/a00896_monotonic_array.py) |
 | 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity) | Easy | [a00905_sort_array_by_parity.py](solutions/a00905_sort_array_by_parity.py) |
 | 941 | [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array) | Easy | [a00941_valid_mountain_array.py](solutions/a00941_valid_mountain_array.py) |
 | 942 | [DI String Match](https://leetcode.com/problems/di-string-match) | Easy | [a00942_di_string_match.py](solutions/a00942_di_string_match.py) |
