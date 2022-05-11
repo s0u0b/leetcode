@@ -1,5 +1,5 @@
 ## My leetcode solutions
-![](https://img.shields.io/badge/Easy-101-success) ![](https://img.shields.io/badge/Medium-26-important) ![](https://img.shields.io/badge/Total-127-inactive)
+![](https://img.shields.io/badge/Easy-102-success) ![](https://img.shields.io/badge/Medium-26-important) ![](https://img.shields.io/badge/Total-128-inactive)
 <br>
 
 | ID | Problem | Difficulty | Solution |
@@ -33,6 +33,7 @@
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [a00153_find_minimum_in_rotated_sorted_array.py](solutions/a00153_find_minimum_in_rotated_sorted_array.py) |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [a00162_find_peak_element.py](solutions/a00162_find_peak_element.py) |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Medium | [a00167_two_sum_ii_input_array_is_sorted.py](solutions/a00167_two_sum_ii_input_array_is_sorted.py) |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [a00169_majority_element.py](solutions/a00169_majority_element.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Medium | [a00189_rotate_array.py](solutions/a00189_rotate_array.py) |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [a00200_number_of_islands.py](solutions/a00200_number_of_islands.py) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [a00206_reverse_linked_list.py](solutions/a00206_reverse_linked_list.py)<br>[a00206_reverse_linked_list_one_while.py](solutions/a00206_reverse_linked_list_one_while.py) |
